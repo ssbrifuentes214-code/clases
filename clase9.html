@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clase 9 - Diagnóstico por Código POST</title>
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="clase9.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<p>17/04/26</p>
+
+<h1>Clase 9</h1>
+
+<h2>Diagnóstico por Código POST y Reparación</h2>
+
+<p>Docente: Romano Andrés</p>
+
+</header>
+
+<main class="contenido">
+
+<section class="introduccion">
+
+<h2> Conceptos Claves</h2>
+
+<p>
+En esta clase aprenderemos el funcionamiento del proceso POST y los
+principales componentes que intervienen durante el encendido de una computadora.
+</p>
+
+</section>
+
+<section class="grid">
+
+<div class="card">
+
+<h3> POST</h3>
+
+<p>
+Es la autoprueba que realiza la BIOS al encender la computadora para verificar que el hardware crítico funcione correctamente.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3> BIOS</h3>
+
+<p>
+Sistema básico de entrada y salida encargado de iniciar el hardware y permitir el arranque del sistema operativo.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3> CMOS</h3>
+
+<p>
+Chip que almacena la configuración de la BIOS y funciona gracias a la pila CR2032.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3> RAM</h3>
+
+<p>
+Memoria de acceso aleatorio. Es una memoria volátil y sin ella la computadora no puede iniciar correctamente.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3> CPU</h3>
+
+<p>
+Unidad Central de Procesamiento. Es el cerebro de la computadora y ejecuta todas las instrucciones.
+</p>
+
+</div>
+
+</section>
+
+<section class="actividad">
+
+<h2> Caso Práctico</h2>
+
+<p>
+
+Al presionar el botón de encendido los coolers giran durante dos segundos y luego la computadora se apaga. No se escuchan pitidos y al volver a intentar sucede exactamente lo mismo.
+
+</p>
+
+<h3>Preguntas</h3>
+
+<ol>
+
+<li>¿Qué componentes críticos son los principales sospechosos?</li>
+
+<li>¿Qué es la pila CMOS y qué fallas provoca cuando se agota?</li>
+
+<li>Ordene tres pasos de diagnóstico sin abrir el gabinete.</li>
+
+<li>Complete el informe técnico.</li>
+
+</ol>
+
+</section>
+
+<section class="card">
+
+<h2> Respuestas</h2>
+
+<ul>
+
+<li><strong>Componentes sospechosos:</strong> Fuente de alimentación (PSU) y placa madre.</li>
+
+<li><strong>¿Por qué no hay pitidos?</strong> Porque la BIOS no llega a iniciar.</li>
+
+<li><strong>Pila CMOS:</strong> Guarda la fecha y hora. Cuando se agota, la PC puede perder la configuración de la BIOS, pero normalmente no impide el encendido.</li>
+
+<li><strong>Pasos de diagnóstico:</strong>
+<ul>
+
+<li>Verificar cables y tomacorrientes.</li>
+
+<li>Desconectar todos los dispositivos USB.</li>
+
+<li>Comprobar si existe olor a quemado.</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2> Informe Técnico</h2>
+
+<table>
+
+<tr>
+
+<th>Ítem</th>
+
+<th>Detalle</th>
+
+</tr>
+
+<tr>
+
+<td>Descarte</td>
+
+<td>La batería CMOS no provoca este tipo de falla.</td>
+
+</tr>
+
+<tr>
+
+<td>Falla detallada</td>
+
+<td>Los coolers funcionan 2 segundos y luego la PC se apaga sin emitir pitidos.</td>
+
+</tr>
+
+<tr>
+
+<td>Hipótesis principal</td>
+
+<td>Fuente de alimentación (PSU) o placa madre.</td>
+
+</tr>
+
+<tr>
+
+<td>Método propuesto</td>
+
+<td>Reemplazar la fuente por una que funcione correctamente.</td>
+
+</tr>
+
+<tr>
+
+<td>Normas de seguridad</td>
+
+<td>Desconectar la computadora de la corriente y nunca abrir la fuente de alimentación.</td>
+
+</tr>
+  
+  <tr>
+    
+    <td>Solucion teorica</td>
+    
+    <td>Remplaza la fuente de alimentacion por una que este en buen estado</td>
+    
+  </tr>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="base.js"></script>
+
+</body>
+
+</html>

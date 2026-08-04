@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 - Compatibilidad e Investigación Avanzada</title>
+
+    <link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="clase10.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-contenido">
+
+        <p class="fecha">Mantenimiento - Fecha: 22/04/26</p>
+
+        <h1>CLASE 10</h1>
+
+        <h2>Actividad 2: Análisis de Compatibilidad - Investigación Avanzada</h2>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="contenedor">
+
+<h2>Conceptos Claves</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+
+<h3>1. Socket</h3>
+
+<p>
+Zócalo de la placa madre donde encastra el CPU.
+</p>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>2. DDR4 - DDR5</h3>
+
+<p>
+Generación de RAM. No son compatibles entre sí.
+</p>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>3. TDP</h3>
+
+<p>
+Potencia de diseño térmico. Calor en watts que disipa una CPU.
+La PSU y el cooler deben soportarlo.
+</p>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>4. PCI-Express</h3>
+
+<p>
+Ranura para GPU y placas de expansión.
+Versiones 3.0, 4.0 y 5.0.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contenedor">
+
+<h2>Consigna</h2>
+
+<div class="caso">
+
+<h3>Caso práctico</h3>
+
+<p>
+
+Un cliente me pide armar una PC.
+
+Le entrega:
+
+</p>
+
+<ul>
+
+<li>CPU Intel i5-124F.</li>
+
+<li>Motherboard Asus B660M.</li>
+
+<li>RAM 16 GB DDR5 5200 MHz.</li>
+
+<li>GPU RTX 3060.</li>
+
+<li>PSU 500 W.</li>
+
+</ul>
+
+<h3>Resolver</h3>
+
+<ol>
+
+<li>Verifique la compatibilidad de la CPU con la placa madre.</li>
+
+<li>Verifique la compatibilidad de la RAM con la placa madre. ¿Funciona? Justifique.</li>
+
+<li>Analice si la PSU es adecuada para esa GPU. ¿Qué riesgo existe? Considere el TDP.</li>
+
+<li>Complete el informe.</li>
+
+</ol>
+
+</div>
+
+</section>
+    <section class="contenedor">
+
+    <h2>Respuestas</h2>
+
+    <div class="respuesta">
+
+        <h3>1. Compatibilidad CPU - Placa Madre</h3>
+
+        <p>
+            El CPU y la placa madre son compatibles porque usa el socket y el chipset
+            compatibles.
+        </p>
+
+    </div>
+
+    <div class="respuesta">
+
+        <h3>2. Compatibilidad RAM - Placa Madre</h3>
+
+        <p>
+            La RAM y la placa madre son incompatibles ya que la RAM es DDR5 y la placa
+            madre es DDR4. No funciona porque es incompatible.
+        </p>
+
+    </div>
+
+    <div class="respuesta">
+
+        <h3>3. Análisis de la PSU</h3>
+
+        <p>
+            La PSU no es adecuada para la GPU ya que la RTX de la GPU tiene un TDP de
+            170 y este sistema consume 350 y si la PSU genérica tiene 500 W no está
+            completa, solo pone 300 W y existe el riesgo de que la GPU y la placa madre
+            se quemen. Por eso se recomienda una PSU de 650 W con certificación
+            Bronze.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="contenedor">
+
+<h2>Informe Técnico</h2>
+
+<div class="tabla-responsive">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ITEM</th>
+
+<th>DETALLE</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Solicitud</td>
+
+<td>Ensamblar una PC.</td>
+
+</tr>
+
+<tr>
+
+<td>Incompatibilidad 1</td>
+
+<td>Lo incompatible es la RAM primeramente.</td>
+
+</tr>
+
+<tr>
+
+<td>Incompatibilidad 2</td>
+
+<td>La otra incompatibilidad es la PSU con la GPU.</td>
+
+</tr>
+
+<tr>
+
+<td>Riesgo Detectado</td>
+
+<td>Se podrían incendiar componentes de alto valor.</td>
+
+</tr>
+
+<tr>
+
+<td>Solución Propuesta</td>
+
+<td>La solución sería cambiar la PSU por una de mayor watts.</td>
+
+</tr>
+
+<tr>
+
+<td>Norma Aplicada</td>
+
+<td>Es la verificación de hardware de PSU.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+    <section class="contenedor">
+
+<h2>Investigación: Fuentes de Alimentación (PSU)</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+
+<h3>ATX</h3>
+
+<p>
+ATX general es el formato clásico de la PC.
+</p>
+
+</div>
+
+<div class="tarjeta">
+
+<h3>80 Plus Standard</h3>
+
+<p>
+Certificación básica de eficiencia energética.
+</p>
+
+</div>
+
+<div class="tarjeta bronze">
+
+<h3>80 Plus Bronze</h3>
+
+<p>
+Bronce → Mejor.
+</p>
+
+</div>
+
+<div class="tarjeta silver">
+
+<h3>80 Plus Silver</h3>
+
+<p>
+Silver → Intermedia.
+</p>
+
+</div>
+
+<div class="tarjeta gold">
+
+<h3>80 Plus Gold</h3>
+
+<p>
+Gold → Muy buena (la más recomendada).
+</p>
+
+</div>
+
+<div class="tarjeta platinum">
+
+<h3>80 Plus Platinum / Titanium</h3>
+
+<p>
+Platinum/Titanium → Es de alta gama.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contenedor">
+
+<h2>Conexión</h2>
+
+<div class="caso">
+
+<p><strong>ATX general</strong> es el formato clásico de la PC.</p>
+
+<p><strong>ATX 3.0 y 3.1</strong> son modernas.</p>
+
+<p>
+Estas son para GPU modernas, tienen conectores nuevos y manejan mejor los picos de energía.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="base.js"></script>
+
+</body>
+</html>

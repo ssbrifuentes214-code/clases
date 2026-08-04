@@ -1,0 +1,269 @@
+:root{
+    --c1:#d5ebff;
+    --c2:#5d8fe5;
+    --c3:#18349a;
+    --c4:#F8F5FF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(248,245,255,.25),
+        rgba(248,245,255,.25)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:var(--c3);
+
+}
+
+/* ENCABEZADO */
+
+header{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    background:linear-gradient(
+        135deg,
+        #18349a,
+        #5d8fe5
+    );
+
+    color:white;
+
+}
+
+header h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:3rem;
+
+    margin:15px 0;
+}
+
+header p{
+
+    opacity:.9;
+}
+
+/* CONTENIDO */
+
+.contenido{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:50px auto;
+}
+
+/* TIMELINE */
+
+.timeline{
+
+    position:relative;
+
+    margin-left:75px;
+    
+    border-left:5px solid #5d8fe5;
+
+    padding-left:75px;
+}
+
+/* TARJETAS */
+
+.paso{
+
+    background:rgba(255,255,255,.60);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(155,93,229,.25);
+    
+    margin-bottom: 60px
+    
+    padding: 35px;
+    
+    color : #222;
+    
+    display:block;
+    
+    margin:0 0 50px 0;
+
+}
+
+.paso::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-48px;
+
+    top:30px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#5d8fe5;
+
+    border:4px solid white;
+}
+
+.paso:hover{
+
+    transform:translateX(10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.paso h2{
+
+    font-family:'Cinzel',serif;
+
+    color:var(--c2);
+
+    margin-bottom:15px;
+}
+
+.paso p,
+.paso li{
+
+    line-height:1.8;
+}
+
+.paso ul{
+
+    margin-left:20px;
+}
+
+/* BARRA */
+
+.barra-nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-top:40px;
+}
+
+.nav-btn{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#5d8fe5;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    transition:.3s;
+}
+
+.nav-btn span{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:12px;
+}
+
+.nav-btn:hover{
+
+    background:#18349a;
+
+    transform:translateY(-5px);
+}
+
+/* ANIMACIONES */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+@keyframes subir{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* CELULARES */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:2.2rem;
+    }
+
+    .timeline{
+
+        margin-left:15px;
+
+        padding-left:20px;
+    }
+
+    .paso::before{
+
+        left:-33px;
+    }
+
+    .barra-nav{
+
+        flex-direction:column;
+    }
+
+}

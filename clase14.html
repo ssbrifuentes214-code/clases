@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Clase 14 - Redes y Direccionamiento IP</title>
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="clase14.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-box">
+
+<h1> CLASE 14</h1>
+
+<p class="fecha">
+ Fecha: 08/05/26
+</p>
+
+<h2>
+Redes y Direccionamiento IP
+</h2>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="panel">
+
+<h2> Conceptos Claves</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>LAN</h3>
+
+<p>
+Red de computadoras en un área limitada, como un aula.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>IP</h3>
+
+<p>
+Dirección numérica que identifica a cada dispositivo en la red. Ejemplo: 192.168.1.10
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>DHCP</h3>
+
+<p>
+Servicio del router que asigna direcciones IP automáticamente.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Conflicto de IP</h3>
+
+<p>
+Ocurre cuando dos dispositivos tienen la misma dirección IP. Ninguno tendrá conexión correctamente.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2> Actividad</h2>
+
+<div class="actividad">
+
+<p>
+
+Al revisar ambas computadoras observa que las dos poseen la dirección IP 192.168.1.10.
+
+</p>
+
+<ol>
+
+<li>¿Qué problema de red ocurrió? Defina conflicto de IP.</li>
+
+<li>Explique dos causas posibles. Una relacionada con DHCP y otra con configuración manual.</li>
+
+<li>Proponga la solución técnica que usted aplicaría.</li>
+
+</ol>
+
+</div>
+
+</section>
+    <section class="panel">
+
+<h2> Respuestas</h2>
+
+<div class="respuesta">
+
+<h3>1. Conflicto de IP</h3>
+
+<p>
+
+Conflicto de IP es un error de red en la capa 3 (Red) del modelo OSI que ocurre cuando dos o más dispositivos en la misma LAN intentan usar la misma dirección IP. El switch no sabe a cuál entregar los paquetes y ambos equipos quedan sin conectividad.
+
+</p>
+
+</div>
+
+<div class="respuesta">
+
+<h3>2. Dos causas posibles</h3>
+
+<p>
+
+<b>Falla DHCP:</b> El router asigna la IP 192.168.1.10 a la PC N°10 sin detectar que ya estaba en uso. Sucede si el "lease time" expiró incorrectamente.
+
+</p>
+
+<p>
+
+<b>Configuración manual:</b> Alguien configuró la PC N°2 con IP estática 192.168.1.10 y luego el DHCP entregó esa misma dirección a otra computadora.
+
+</p>
+
+</div>
+
+<div class="respuesta">
+
+<h3>3. Solución del técnico</h3>
+
+<p>
+
+<b>Solución inmediata:</b> En la PC N°10 ejecutar en CMD los comandos:
+
+</p>
+
+<ul>
+
+<li>ipconfig /release</li>
+
+<li>ipconfig /renew</li>
+
+</ul>
+
+<p>
+
+Para solicitar una nueva dirección IP al servidor DHCP.
+
+</p>
+
+<p>
+
+<b>Solución definitiva:</b> Ingresar al router y crear una reserva DHCP asociando la dirección MAC de la PC N°2 a la IP 192.168.1.10 para que nunca vuelva a asignarse a otro equipo.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2> Informe Técnico</h2>
+
+<table>
+
+<tr>
+
+<th>ITEM</th>
+
+<th>DETALLES</th>
+
+</tr>
+
+<tr>
+
+<td>Incidencia</td>
+
+<td>Pérdida de conectividad en PC 2 y PC 10.</td>
+
+</tr>
+
+<tr>
+
+<td>Diagnóstico</td>
+
+<td>IP duplicada 192.168.1.10.</td>
+
+</tr>
+
+<tr>
+
+<td>Causa raíz</td>
+
+<td>Asignación de IP estática dentro del rango DHCP sin reserva.</td>
+
+</tr>
+
+<tr>
+
+<td>Falla</td>
+
+<td>Administración incorrecta de la red.</td>
+
+</tr>
+
+<tr>
+
+<td>Protocolo de solución</td>
+
+<td>
+1. Liberación y renovación de IP mediante CMD.<br>
+2. Verificación de conectividad con ping 8.8.8.8.<br>
+3. Acceso al router para reservar DHCP por dirección MAC.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Prevención</td>
+
+<td>
+Documentar todas las IP estáticas. Excluir el rango 2 a 20 del Pool DHCP para servidores e impresoras. Capacitar al personal.
+</td>
+
+</tr>
+
+<tr>
+
+<td>Normas aplicadas</td>
+
+<td>IEEE 802.3: estándar Ethernet y buenas prácticas de administración LAN.</td>
+
+</tr>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="base.js"></script>
+
+</body>
+
+</html>

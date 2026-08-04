@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0d41a1,#022bd1,#262fda);
+    color:white;
+    line-height:1.7;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    min-height:320px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(13,71,161,.75),rgba(13,71,161,.75)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-box{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.hero h1{
+    font-size:58px;
+    color:#b3c5ff;
+}
+
+.hero h2{
+    margin-top:15px;
+    font-size:28px;
+}
+
+.fecha{
+    color:#d9dcff;
+    font-weight:bold;
+}
+
+/* ===== SECCIONES ===== */
+
+.panel{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.panel h2{
+    color:#b3c5ff;
+    margin-bottom:25px;
+}
+
+/* ===== TARJETAS ===== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-left:6px solid #262fda;
+    border-radius:20px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+
+.card h3{
+    color:#d9dcff;
+    margin-bottom:15px;
+}
+/* ===== ACTIVIDAD ===== */
+
+.actividad{
+    background:#ffffff;
+    color:#222;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.30);
+}
+
+.actividad p{
+    margin-bottom:20px;
+}
+
+.actividad ol{
+    margin-left:25px;
+}
+
+.actividad li{
+    margin-bottom:12px;
+}
+
+/* ===== RESPUESTAS ===== */
+
+.respuesta{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #262fda;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    transition:.3s;
+}
+
+.respuesta:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.respuesta h3{
+    color:#b3c5ff;
+    margin-bottom:15px;
+}
+
+/* ===== TABLA ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    color:#222;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+th{
+    background:#022bd1;
+    color:white;
+    padding:18px;
+}
+
+td{
+    padding:16px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f5f5f5;
+}
+
+/* ===== BOTONES ===== */
+
+.botones{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.botones a{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    background:#022bd1;
+    color:white;
+    padding:18px;
+    border-radius:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.botones a:hover{
+    background:#012a9b;
+    transform:translateY(-5px);
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#0d41a1;
+    color:#ddd;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* ===== ANIMACIONES ===== */
+
+.hero,
+.panel,
+.card,
+.actividad,
+.respuesta,
+table{
+    animation:entrada .8s ease;
+}
+
+@keyframes entrada{
+
+from{
+    opacity:0;
+    transform:translateY(25px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:22px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.botones{
+    flex-direction:column;
+}
+
+.panel{
+    width:95%;
+}
+
+.hero-box{
+    padding:25px;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11 - Análisis de rendimiento</title>
+
+    <link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="clase11.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-box">
+
+<h1>CLASE 11</h1>
+
+<p class="fecha">
+ Fecha: 24/04/26
+</p>
+
+<h2>
+Actividad 3: Análisis de rendimiento - Optimización de sistema
+</h2>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="panel">
+
+<h2> Conceptos Claves</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Cuello de botella</h3>
+<p>
+Componente que limita el rendimiento de todo el sistema.
+</p>
+</div>
+
+<div class="card">
+<h3>2. Administrador de tareas</h3>
+<p>
+Utilidad de Windows para ver el uso de CPU, RAM, disco y red.
+</p>
+</div>
+
+<div class="card">
+<h3>3. Memoria virtual</h3>
+<p>
+Espacio del HDD o SSD que Windows usa como RAM de emergencia.
+Es muy lento.
+</p>
+</div>
+
+<div class="card">
+<h3>4. Swapping</h3>
+<p>
+Proceso de mover datos de la RAM a la memoria virtual por falta de RAM física.
+Causa lentitud extrema.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2> Consigna</h2>
+
+<div class="consigna">
+
+<p>
+
+Usted abre el administrador de tareas en una PC con Windows 11 y observa:
+
+</p>
+
+<ul>
+
+<li>CPU: 15%</li>
+
+<li>RAM: 97%</li>
+
+<li>Disco: 100% activo</li>
+
+<li>GPU: 2%</li>
+
+</ul>
+
+<p>
+
+La PC está muy lenta al abrir Chrome con dos pestañas.
+
+</p>
+
+<ol>
+
+<li>Identifique cuál es el cuello de botella principal (CPU, RAM o Disco). Justifique con los porcentajes.</li>
+
+<li>Explique qué es el swapping y por qué el disco está al 100% si la RAM está al 97%.</li>
+
+<li>Proponga tres soluciones ordenadas de menor a mayor costo para resolver el problema.</li>
+
+<li>Complete el informe técnico.</li>
+
+</ol>
+
+</div>
+
+</section>
+    <section class="panel">
+
+<h2> Respuestas</h2>
+
+<div class="respuesta">
+
+<h3>1. Cuello de botella</h3>
+
+<p>
+
+El principal cuello de botella es la memoria RAM y el disco.
+La RAM se encuentra al 97% de uso y el disco al 100% de actividad,
+mientras que el procesador solo trabaja al 15%, por lo que la CPU no
+es la causa de la lentitud.
+
+</p>
+
+</div>
+
+<div class="respuesta">
+
+<h3>2. ¿Qué es el swapping?</h3>
+
+<p>
+
+El swapping ocurre cuando la memoria RAM está casi llena y el sistema
+operativo utiliza parte del disco como memoria virtual.
+Como el disco es mucho más lento que la RAM, la computadora pierde
+rendimiento y responde con mayor lentitud.
+
+</p>
+
+</div>
+
+<div class="respuesta">
+
+<h3>3. Soluciones</h3>
+
+<ol>
+
+<li>Cerrar programas y procesos que no sean necesarios.</li>
+
+<li>Desactivar aplicaciones que se inician junto con Windows.</li>
+
+<li>Agregar más memoria RAM o reemplazar el HDD por un SSD si corresponde.</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h2> Informe Técnico</h2>
+
+<table>
+
+<tr>
+
+<th>ITEM</th>
+
+<th>DETALLE</th>
+
+</tr>
+
+<tr>
+
+<td>Problema detectado</td>
+
+<td>Rendimiento lento del sistema.</td>
+
+</tr>
+
+<tr>
+
+<td>Cuello de botella</td>
+
+<td>RAM y Disco.</td>
+
+</tr>
+
+<tr>
+
+<td>Causa</td>
+
+<td>Uso excesivo de memoria y utilización de memoria virtual.</td>
+
+</tr>
+
+<tr>
+
+<td>Solución</td>
+
+<td>Optimizar el sistema y ampliar la memoria RAM.</td>
+
+</tr>
+
+<tr>
+
+<td>Estado final</td>
+
+<td>Equipo funcionando correctamente luego de aplicar las mejoras.</td>
+
+</tr>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="base.js"></script>
+
+</body>
+</html>
