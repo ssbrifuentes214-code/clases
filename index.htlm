@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clases de Hardware y Software</title>
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="estilo.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section id="inicio" class="hero">
+   
+    <span class="badge-hero">18 clases · Nivel inicial a avanzado</span>
+
+    <h1> Clases de Instalación y Mantenimiento de Hardware y Software 3</h1>
+
+    <p>
+        Todas las clases del primer cuatrimestre para aprender instalación y mantenimiento. 5° año 2° divicion
+    </p>
+    <p>
+        Prof. Andres Romano
+    </p>
+    <p>
+        Alumna: Fuentes Sabrina
+    </p>
+
+    <div class="inicio-card">
+        <h2> Comenzar el Curso</h2>
+        <button onclick="mostrarCurso()">Ingresar</button>
+    </div>
+
+</section>
+
+<section id="clases">
+
+    <div id="curso" class="oculto">
+
+        <div id="buscar" class="buscador">
+            <input
+                type="text"
+                id="buscador"
+                placeholder=" Buscar clase..."
+                aria-label="Buscar clase"
+            >
+        </div>
+
+        <div class="carrusel">
+
+            <a href="clase1.html" class="card">
+                <span>01</span>
+                <h2>Clase 1</h2>
+                <p>Etapa de Diagnostico</p>
+            </a>
+
+            <a href="clase2.html" class="card">
+                <span>02</span>
+                <h2>Clase 2</h2>
+                <p>Etapa de Diagnostico</p>
+            </a>
+
+            <a href="clase3.html" class="card">
+                <span>03</span>
+                <h2>Clase 3</h2>
+                <p>Actividas Grupal</p>
+            </a>
+
+            <a href="clase4.html" class="card">
+                <span>04</span>
+                <h2>Clase 4</h2>
+                <p>Diagrama de Funcionamiento Detallado del Ordenador</p>
+            </a>
+
+            <a href="clase5.html" class="card">
+                <span>05</span>
+                <h2>Clase 5</h2>
+                <p>Preguntas de Interfaz</p>
+            </a>
+
+            <a href="clase6.html" class="card">
+                <span>06</span>
+                <h2>Clase 6</h2>
+                <p>Mapa Conceptul</p>
+            </a>
+
+            <a href="clase7.html" class="card">
+                <span>07</span>
+                <h2>Clase 7</h2>
+                <p>Componentes de la Placa</p>
+            </a>
+
+            <a href="clase8.html" class="card">
+                <span>08</span>
+                <h2>Clase 8</h2>
+                <p>Cables del Panel Frontal</p>
+            </a>
+
+            <a href="clase9.html" class="card">
+                <span>09</span>
+                <h2>Clase 9</h2>
+                <p>Diagnostico Post-Reparacion</p>
+            </a>
+
+            <a href="clase10.html" class="card">
+                <span>10</span>
+                <h2>Clase 10</h2>
+                <p>Analisis de Compatibilidad-Investigacion Avanzada</p>
+            </a>
+
+            <a href="clase11.html" class="card">
+                <span>11</span>
+                <h2>Clase 11</h2>
+                <p>Analicis de Rendimiento-Optimizacion del Sistema</p>
+            </a>
+
+            <a href="clase12.html" class="card">
+                <span>12</span>
+                <h2>Clase 12</h2>
+                <p>Continuacion</p>
+            </a>
+
+            <a href="clase13.html" class="card">
+                <span>13</span>
+                <h2>Ergonomia en el Puesto Tecnico</h2>
+                <p></p>
+            </a>
+
+            <a href="clase14.html" class="card">
+                <span>14</span>
+                <h2>Clase 14</h2>
+                <p>Redes y Direccion IP
+                </p>
+            </a>
+
+            <a href="clase15.html" class="card">
+                <span>15</span>
+                <h2>Clase 15</h2>
+                <p>Estresamiento de Hardware y Diagnostico de Sistema</p>
+            </a>
+
+            <a href="clase16.html" class="card">
+                <span>16</span>
+                <h2>Clase 16</h2>
+                <p>Explkcacion</p>
+            </a>
+
+            <a href="clase17.html" class="card">
+                <span>17</span>
+                <h2>Clase 17</h2>
+                <p>Riesgo y Medidas de Seguridad</p>
+            </a>
+
+            <a href="clase18.html" class="card">
+                <span>18</span>
+                <h2>Clase 18</h2>
+                <p>Plantilla de Registro de Datos</p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+   <div class="panel-info">
+
+    <div class="boton-info">
+         Introduccion
+    </div>
+
+    <div class="texto-info">
+        <h3>Clases de Hardware y Software</h3>
+
+        <p>
+          La materia Instalación y Mantenimiento de Software y Hardware brinda los conocimientos necesarios para comprender el funcionamiento de una computadora y sus componentes. En ella se aprende a instalar, configurar, actualizar y mantener tanto el hardware (partes físicas) como el software (programas y sistemas operativos), con el objetivo de prevenir fallas, mejorar el rendimiento de los equipos y resolver problemas técnicos de manera eficiente. Estos conocimientos son fundamentales para el uso y mantenimiento adecuado de los sistemas informáticos.
+        </p>
+    </div>
+
+</div>
+
+<section id="ajustes"></section>
+
+<script src="java.js"></script>
+
+<script src="base.js"></script>
+
+</body>
+</html>
