@@ -12,17 +12,6 @@ function mostrarCurso(){
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    /* ---------- Íconos y nivel por tarjeta ---------- */
-    const ICONOS = ["🔍","🧰","👥","⚙️","🖥️","🧠","🔌","💡","🩺","🧩","📊","📘","🪑","🌐","🔥","🧪","⚠️","📋"];
-
-    const nivelPorIndice = (i) => {
-        if (i < 6) return "Básico";
-        if (i < 12) return "Intermedio";
-        return "Avanzado";
-    };
-
     document.querySelectorAll(".carrusel .card").forEach((card, i) => {
         const titulo = card.querySelector("h2");
         if (titulo && !card.querySelector(".card-icono")) {
